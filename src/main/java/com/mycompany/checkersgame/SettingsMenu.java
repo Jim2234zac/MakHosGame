@@ -215,7 +215,7 @@ public class SettingsMenu extends JFrame {
         
         panel.add(createSectionTitle("Information"));
         
-        JLabel version = new JLabel("Version: 2.1 Pro Edition");
+        JLabel version = new JLabel("CS318 Section227E Object-Oriented Programming ");
         version.setFont(new Font("Segoe UI", Font.PLAIN, 14));
         version.setBorder(new EmptyBorder(5, 0, 5, 0));
         version.setAlignmentX(Component.LEFT_ALIGNMENT);
