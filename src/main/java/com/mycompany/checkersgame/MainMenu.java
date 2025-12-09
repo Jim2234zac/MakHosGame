@@ -26,7 +26,7 @@ public class MainMenu extends JFrame {
     private JButton btnPlay;
 
     public MainMenu() {
-        setTitle("Mak Hos Pro - Thai Checkers");
+        setTitle("Mak Hos Pro - ProJect CS318");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(1024, 720);
         setLocationRelativeTo(null);
@@ -47,7 +47,7 @@ public class MainMenu extends JFrame {
         logoLabel.setForeground(Color.WHITE);
         logoLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
         
-        JLabel versionLabel = new JLabel("v 2.1 Pro Edition");
+        JLabel versionLabel = new JLabel("Project Object-Oriented Programming");
         versionLabel.setFont(new Font("Segoe UI", Font.PLAIN, 12));
         versionLabel.setForeground(new Color(150, 150, 160));
         versionLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -68,11 +68,10 @@ public class MainMenu extends JFrame {
         difficultyMenuPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
         difficultyMenuPanel.setVisible(false); 
 
-        // เพิ่มปุ่มย่อยลงในแผงเมนูย่อย (ย่อหน้าเข้าไปหน่อยให้ดูรู้ว่าเป็นลูกน้อง)
         difficultyMenuPanel.add(Box.createRigidArea(new Dimension(0, 5)));
-        difficultyMenuPanel.add(createSubMenuButton("•  Easy Mode", 1));
-        difficultyMenuPanel.add(createSubMenuButton("•  Normal Mode", 2));
-        difficultyMenuPanel.add(createSubMenuButton("•  Hard Mode", 3));
+        difficultyMenuPanel.add(createSubMenuButton("•  EZ Mode", 1));
+        difficultyMenuPanel.add(createSubMenuButton("•  Medium Mode", 2));
+        difficultyMenuPanel.add(createSubMenuButton("•  Hardcore! Mode", 3));
         
         sidebar.add(difficultyMenuPanel);
 
@@ -86,7 +85,7 @@ public class MainMenu extends JFrame {
         
         sidebar.add(Box.createVerticalGlue()); // ดัน Footer ลงล่างสุด
         
-        JLabel creditLabel = new JLabel("© 2025 Java Project");
+        JLabel creditLabel = new JLabel("© 2025 Project CS318");
         creditLabel.setForeground(Color.GRAY);
         sidebar.add(creditLabel);
 
@@ -101,12 +100,12 @@ public class MainMenu extends JFrame {
         titlePanel.setOpaque(false);
         titlePanel.setLayout(new BoxLayout(titlePanel, BoxLayout.Y_AXIS));
         
-        JLabel welcomeTitle = new JLabel("MASTER THE KING PIECE");
+        JLabel welcomeTitle = new JLabel("King of Makhos");
         welcomeTitle.setFont(new Font("Segoe UI", Font.BOLD, 40));
         welcomeTitle.setForeground(TEXT_PRIMARY);
         welcomeTitle.setAlignmentX(Component.CENTER_ALIGNMENT);
         
-        JLabel desc = new JLabel("Choose a difficulty level to challenge our Alpha-Zero AI.");
+        JLabel desc = new JLabel("Choose a level to challenge our AI.");
         desc.setFont(new Font("Segoe UI", Font.PLAIN, 18));
         desc.setForeground(Color.GRAY);
         desc.setAlignmentX(Component.CENTER_ALIGNMENT);
